@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JDCJsonExtension_Example' do
+  pod 'JDCJsonExtension', :path => '../'
+
+  target 'JDCJsonExtension_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
