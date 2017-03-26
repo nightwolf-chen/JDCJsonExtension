@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDCJsonExtension'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A lightweight json map category for Objective c'
 
 # This description is used to generate tags and improve search results.
