@@ -22,7 +22,7 @@ pod "JDCJsonExtension"
 
 ## Author
 
-466202783@qq.com, 466202783@qq.com
+Jidong Chen jidongchen93@gmail.com
 
 ## License
 

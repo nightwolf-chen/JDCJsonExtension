@@ -1,0 +1,6 @@
+framework module JDCJsonExtension {
+  umbrella header "JDCJsonExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
