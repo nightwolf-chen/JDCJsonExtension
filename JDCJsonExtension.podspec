@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A lightweight json map category for Objective c with high performance.
                        DESC
 
   s.homepage         = 'https://git.coding.net/nirvawolf/JDCJsonExtension.git'
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'JDCJsonExtension' => ['JDCJsonExtension/Assets/*.png']
   # }
 
-  s.public_header_files = 'JDCJsonExtension/Classes/**/*.h'
+  s.public_header_files = 'JDCJsonExtension/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

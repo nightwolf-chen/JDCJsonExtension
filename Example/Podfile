@@ -1,7 +1,11 @@
 use_frameworks!
 
+source "https://coding.net/u/nirvawolf/p/JDCPods/git"
+source "https://github.com/CocoaPods/Specs"
+
 target 'JDCJsonExtension_Example' do
-  pod 'JDCJsonExtension', :path => '../'
+#  pod 'JDCJsonExtension', :path => '../'
+  pod 'JDCJsonExtension'
 
   target 'JDCJsonExtension_Tests' do
     inherit! :search_paths
