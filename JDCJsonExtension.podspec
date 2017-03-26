@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/nightwolf-chen/JDCJsonExtension'
+  s.homepage         = 'https://git.coding.net/nirvawolf/JDCJsonExtension.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jidong Chen' => 'jidongchen93@gmail.com' }
-  s.source           = { :git => 'https://github.com/nightwolf-chen/JDCJsonExtension.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://git.coding.net/nirvawolf/JDCJsonExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '6.0'
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'JDCJsonExtension' => ['JDCJsonExtension/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'JDCJsonExtension/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
