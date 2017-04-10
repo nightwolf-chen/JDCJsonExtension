@@ -2,7 +2,7 @@
 //  JDCJsonExtension.h
 //  Pods
 //
-//  Created by maochengrui on 10/04/2017.
+//  Created by Jidong Chen on 10/04/2017.
 //
 //
 
