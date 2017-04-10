@@ -3,10 +3,7 @@
 #endif
 
 #import "JDCClassProperty.h"
-#import "NSObject+JDCClassProperty.h"
-#import "NSObject+JDCJsonSerialization.h"
-#import "NSObject+JDCNSCoding.h"
-#import "JDCClassProperty.h"
+#import "JDCJsonExtension.h"
 #import "NSObject+JDCClassProperty.h"
 #import "NSObject+JDCJsonSerialization.h"
 #import "NSObject+JDCNSCoding.h"

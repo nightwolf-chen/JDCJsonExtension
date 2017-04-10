@@ -2,8 +2,8 @@
 //  JDCAppDelegate.m
 //  JDCJsonExtension
 //
-//  Created by 466202783@qq.com on 03/25/2017.
-//  Copyright (c) 2017 466202783@qq.com. All rights reserved.
+//  Created by Jidong Chen on 03/25/2017.
+//  Copyright (c) 2017 Jidong Chen All rights reserved.
 //
 
 #import "JDCAppDelegate.h"

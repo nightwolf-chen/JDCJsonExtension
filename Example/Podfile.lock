@@ -1,0 +1,19 @@
+PODS:
+  - JDCJsonExtension (0.1.2)
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - JDCJsonExtension (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  JDCJsonExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JDCJsonExtension: 89c5cc01c0ff316fe8bfb839182304f4b6060d01
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+PODFILE CHECKSUM: 5ac39f67e25e44d45611b615fd7e822627a480c2
+
+COCOAPODS: 1.1.1
