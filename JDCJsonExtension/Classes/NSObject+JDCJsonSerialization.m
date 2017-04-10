@@ -98,7 +98,7 @@
     NSMutableArray *mArr = [NSMutableArray new];
     for(NSDictionary *dic in jsonArray){
         id model = [[[self class] alloc] initWithJsonDictionary:dic error:error];
-        if (error) {
+        if (*error) {
             return nil;
         }
         [mArr addObject:model];
@@ -139,7 +139,7 @@
                         Class itemClass = NSClassFromString(itemClassName);
                         NSArray *values = [itemClass modelsFromJsonArray:value error:error];
                     
-                        if (error) {
+                        if (*error) {
                             return nil;
                         }
                     
@@ -209,13 +209,14 @@
                                                         options:NSJSONReadingAllowFragments
                                                           error:error];
     
-    if ([dic isMemberOfClass:[NSDictionary class]]) {
-        @throw [NSException exceptionWithName:@"Invalid json object"
-                                       reason:@"Not a valid json object"
-                                     userInfo:nil];
+    if (![dic isKindOfClass:[NSDictionary class]]) {
+        NSError *err = [NSError errorWithDomain:@"JDCJsonErrorInvalidJson"
+                                           code:-1
+                                       userInfo:@{@"reason":@"Not a valid json object"}];
+        *error = err;
     }
     
-    if (error) {
+    if (*error) {
         return nil;
     }
     

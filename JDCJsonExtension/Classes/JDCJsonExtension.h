@@ -10,4 +10,8 @@
 #define JDCJsonExtension_h
 
 
+#import <JDCJsonExtension/NSObject+JDCJsonSerialization.h>
+#import <JDCJsonExtension/NSObject+JDCNSCoding.h>
+
+
 #endif /* JDCJsonExtension_h */
