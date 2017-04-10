@@ -13,4 +13,6 @@
 @property (nonatomic,strong) NSString *mid;
 @property (nonatomic,strong) NSString *title;
 
++ (NSDictionary *)jdc_jsonSerializationKeyMapper;
+
 @end

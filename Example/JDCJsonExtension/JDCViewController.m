@@ -7,6 +7,7 @@
 //
 
 #import "JDCViewController.h"
+#import "JDCCustomModel.h"
 
 @interface JDCViewController ()
 
@@ -16,6 +17,29 @@
 
 - (void)viewDidLoad
 {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"json"];
+    NSError *err = nil;
+    NSString *jsonStr = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&err];
+    if (!err) {
+        JDCCustomModel *model = [[JDCCustomModel alloc] initWithJsonString:jsonStr error:&err];
+        if (err) {
+            NSLog(@"Failed !");
+        }else{
+            
+            NSData *archived = [NSKeyedArchiver archivedDataWithRootObject:model];
+            JDCCustomModel *unarchivedModel = [NSKeyedUnarchiver unarchiveObjectWithData:archived];
+            if ([unarchivedModel.name isEqual:model.name]) {
+                NSLog(@"NSKeyedArchiver words!");
+            }else{
+                NSLog(@"NSKeyedArchiver failed to work!");
+            }
+        }
+    }else{
+        NSLog(@"Failed to read string from file.");
+    }
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

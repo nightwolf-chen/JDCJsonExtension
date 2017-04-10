@@ -10,4 +10,9 @@
 
 @implementation JDCCustomSubModel
 
++ (NSDictionary *)jdc_jsonSerializationKeyMapper
+{
+    return @{@"mid":@"id"};
+}
+
 @end

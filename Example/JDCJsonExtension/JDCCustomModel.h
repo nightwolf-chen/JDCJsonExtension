@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JDCJsonExtension/JDCJsonExtension.h>
 
 
 /*
  Example Json text:
  {
-   "p_name":@"jack",
-   "p_text":@"Hello world",
-   "p_url":@"https://github.com",
+   "p_name":"jack",
+   "p_text":"Hello world",
+   "p_url":"https://github.com",
      "items":[
         {
          "id":1,
@@ -41,5 +42,8 @@
 
 @property (nonatomic,strong) NSArray *submodels;
 
+
++ (NSDictionary *)jdc_KeyPathToClassNameMapper;
++ (NSDictionary *)jdc_jsonSerializationKeyMapper;
 
 @end
